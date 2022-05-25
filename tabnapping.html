@@ -5,7 +5,9 @@
 	</div>
 	
  <script>
-  window.opener.location = "http://evil.com";
+   if (window.opener) {
+      window.opener.location = "https://google.com";
+   }
   </script>
 </body>
 
